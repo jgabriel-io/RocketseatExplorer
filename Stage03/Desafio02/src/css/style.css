@@ -1,0 +1,263 @@
+/* Zera as margens e preenchimentos padrão, define o modelo de caixa e a fonte */
+* {
+    margin: 0; /* Zera a margem */
+    padding: 0; /* Zera o preenchimento */
+    box-sizing: border-box; /* Define o modelo de caixa */
+    font-family: 'Mulish', sans-serif; /* Define a fonte */
+    -webkit-font-smoothing: antialiased; /* Ajusta a renderização da fonte para suavização */
+}
+
+/* Definição de variáveis CSS */
+:root {
+    font-size: 62.5%; /* Define o tamanho base da fonte como 62.5% */
+    --color-base-yellow: #ffee4a;
+    --color-base-orange: #fe9600;
+    --color-base-black: #2c2c2c;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-size: 1.6rem; /* Tamanho da fonte padrão */
+    height: 100vh; /* Altura igual à janela de visualização */
+    overflow-x: hidden; /* Oculta a rolagem horizontal */
+}
+
+/* Estrutura da página principal */
+.page {
+    display: grid; /* Layout em grid */
+    grid-template-rows: max-content 1fr max-content; /* Layout das linhas */
+    height: 100%; /* Ocupa toda altura disponível */
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: var(--color-base-orange); /* Cor de fundo */
+    padding: 1.2rem 2.8rem; /* Preenchimento superior/inferior esquerdo/direito */
+}
+
+.headerItens {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 2.4rem; /* Espaço entre os itens */
+}
+
+/* Estilos gerais para vários conteúdos */
+.headerContent,
+.contentHeadline,
+.articleText,
+.sidebarSection,
+.content {
+    max-width: 121.6rem; /* Largura máxima */
+    margin: 0 auto; /* Margem superior/inferior e auto para esquerda/direita */
+}
+
+/* Barra de pesquisa */
+.searchBar {
+    flex: 1; /* Flexibilidade para ajustar ao espaço disponível */
+}
+
+.searchInput {
+    border: none; /* Remove a borda da barra de pesquisa */
+    border-radius: 4px; /* Borda arredondada */
+    background-color: var(--color-base-yellow); /* Cor de fundo */
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem; /* Preenchimento superior/direito/inferior/esquerdo */
+    width: 100%; /* Ocupa o espaço total */
+}
+
+.searchInput::placeholder {
+    color: var(--color-base-black); /* Cor do texto do placeholder */
+    font-size: 1.6rem; /* Tamanho padrão da fonte */
+    font-weight: 600; /* Peso da fonte semi-negrito */
+}
+
+/* Texto da barra de pesquisa */
+.searchLabel {
+    display: block; /* Layout como bloco */
+    width: 1px; /* Define a largura como 1px */
+    height: 1px; /* Define a altura como 1px */
+    overflow: hidden; /* Oculta o conteúdo excedente */
+    position: absolute; /* Define o posicionamento como absoluto */
+}
+
+/* Ícone */
+.avatar {
+    width: 4.4rem; /* Tamanho do ícone */
+    height: 4.4rem; /* Altura do ícone */
+    border-radius: 50%; /* Ícone circular */
+}
+
+/* Imagem do banner */
+.figureBanner {
+    display: block; /* Define como bloco */
+    width: 100%; /* Ocupa o espaço total */
+    aspect-ratio: 16/9; /* Proporção largura/altura da imagem */
+    object-fit: cover; /* Cobertura da área do contêiner */
+    overflow: hidden; /* Oculta o conteúdo excedente */
+    border-radius: .5rem; /* Raio da borda */
+}
+
+/* Conteúdo da página */
+.content {
+    display: grid; /* Layout em grid */
+    gap: 3.4rem; /* Espaço entre os itens no contêiner */
+}
+
+/* Título do conteúdo */
+.contentHeadline {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Layout em colunas */
+    gap: .8rem; /* Espaço entre os itens */
+    padding: 3.1rem 2.2rem; /* Preenchimento superior/inferior direito/esquerdo */
+}
+
+.contentTitle {
+    font-size: 2.4rem; /* Tamanho da fonte */
+}
+
+/* Botões de votação */
+.vote {
+    display: flex; /* Layout flexível */
+    gap: 2.4rem; /* Espaço entre os itens */
+}
+
+.voteBtn {
+    border-radius: 50%; /* Borda arredondada */
+    background-color: var(--color-base-orange); /* Cor de fundo */
+    display: grid; /* Layout em grid */
+    place-content: center; /* Alinhamento central */
+    height: 4rem; /* Altura */
+    width: 4rem; /* Largura */
+}
+
+/* Texto e barra lateral */
+.articleText,
+.sidebar {
+    padding: 0rem 2.2rem; /* Preenchimento superior/inferior direito/esquerdo */
+}
+
+/* Barra lateral */
+.sidebar {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Layout em colunas */
+    gap: 3.2rem; /* Espaço entre os itens */
+    
+    padding-bottom: 4.1rem; /* Preenchimento inferior */
+    animation: to-left 0.3s .4s backwards; 
+}
+
+.sidebarSection {
+    display: grid; /* Layout em grid */
+    gap: 3.2rem; /* Espaçamento */
+}
+
+.relatedArticle {
+    --delay: .8s;
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 8.4rem;
+    gap: 1.6rem;
+    animation: to-left 1s var(--delay) backwards;
+}
+
+/* Imagem da barra lateral */
+.thumbnail {
+    overflow: hidden; /* Oculta o conteúdo excedente */
+    border-radius: .5rem; /* Raio da borda */
+    width: 151px; /* Largura*/
+    height: 84px; /* Altura*/
+    object-fit: cover; /* Cobertura da área do contêiner */
+}
+
+.relatedImg {
+    display: block; /* Layout em bloco */
+    object-fit: cover; /* Cobertura da área do contêiner */
+    object-position: center; /**/
+    height: 100%; /* Altura total */
+    width: 100%; /* Largura total */
+    transition: all 1s; /** Aplica uma transição suave com duração de 1 segundo para todas as propriedades **/ 
+}
+
+/* Imagem com a seta em cima */
+.relatedArticle:hover .relatedImg {
+    transform: scale(1.2) rotate(2deg); /** Aumenta o tamanho em 130% e rotaciona o elemento em 10 graus **/
+}
+
+/* Conteúdo da barra lateral */
+.relatedDetails {
+    display: grid;
+}
+
+/* Título da barra lateral */
+.relatedTitle {
+    font-size: 1.8rem; /* Tamanho da fonte */
+}
+
+/* Texto da barra lateral */
+.relatedInfo {
+    font-size: 14px; /* Tamanho da fonte */
+    display: -webkit-box; /** Define a exibição como uma caixa flexível no WebKit **/
+    -webkit-line-clamp: 3; /** Limita o número de linhas de texto exibidas para 3 no WebKit **/
+    -webkit-box-orient: vertical; /** Orientação vertical das linhas de texto no WebKit **/
+    text-overflow: ellipsis; /** Adiciona reticências ao final do texto caso ele seja cortado **/
+    overflow: hidden; /* Oculta o conteúdo excedente */
+}
+
+/* Rodapé da página */
+.footer {
+    background-color: var(--color-base-orange); /* Cor de fundo */
+    color: var(--color-base-black); /* Cor do texto */
+    padding: 1.6rem; /* Preenchimento */
+    text-align: center; /* Alinha o texto ao centro horizontalmente */
+}
+
+/* Responsividade para dispositivos médios */
+@media screen and (min-width: 830px) {
+    .content {
+        grid-template-areas: "main sidebar"; /* Layout dividido em duas áreas */
+        padding: 4.4rem 3rem; /* Preenchimento superior/inferior direito/esquerdo */
+    }
+
+    .contentHeadline {
+        flex-direction: row; /* Organiza em linhas */
+        justify-content: space-between; /* Espaçamento entre os itens */
+        align-items: center; /* Alinha os itens ao centro */
+        padding: 3.1rem 0rem; /* Preenchimento superior/inferior direito/esquerdo */
+    }
+
+    .articleText {
+        padding: initial; /* Remove o preenchimento inicial */
+    }
+
+    .mainContent {
+        grid-area: main; /* Define a área para o conteúdo */
+    }
+
+    .sidebar {
+        grid-area: sidebar; /* Define a área para a barra lateral */
+        padding: initial; /* Remove o preenchimento inicial */
+    }
+
+    .sidebarSection {
+        max-width: 38.2rem; /* Largura máxima da barra lateral */
+    }
+
+    /* Responsividade para dispositivos grandes */
+    @media screen and (min-width: 1280px) {
+        .content {
+            padding: 4.4rem 0rem 4rem; /* Preenchimento superior/inferior direito/esquerdo inferior */
+        }
+    }
+}
+
+/* Keyframes para animações */
+@keyframes to-left {
+    0% {
+        transform: translateX(130%); /* Define o elemento fora da tela, movendo-o horizontalmente para a direita */
+    }
+
+    100% {
+        transform: translateX(0%); /* Retorna o elemento à sua posição original, sem deslocamento horizontal */
+    }
+}
+

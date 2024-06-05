@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar seu mentor. Bora lá?</p>
+            <img src="images/img1.png" alt="#">
+            <div class="header-legend"><legend>INFORMAÇÕES PESSOAIS</legend></div>
+        </header>
+
+        <main>
+            <form id="form">
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <div class="col-2">
+                            <div class="input-wraper">
+                                <label for="form-name">Nome</label>
+                                <input type="text" id="form-name">
+                            </div>
+
+                            <div class="input-wraper">
+                                <label for="form-surname">Sobrenome</label>
+                                <input type="text" id="form-surname">
+                            </div>
+                        </div>
+    
+                        <div class="input-wraper">
+                            <label for="form-email">Email<span>(digite um email válido)</span></label>
+                            <input type="email" id="form-email">
+                        </div>
+                    </div>
+                </fieldset>    
+    
+                <fieldset>
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    <div class="fieldset-wrapper">
+                        <div class="input-wraper">
+                            <label for="form-mentor">Selecione quem foi seu mentor</label>
+                            <select id="form-mentor">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">João</option>
+                                <option value="2">Myke</option>
+                                <option value="3">Wesley</option>
+                            </select>
+                        </div>
+                
+                        <div class="input-wraper">
+                            <label for="form-feedback">Feedback sobre o mentor</label>
+                            <textarea id="form-feedback"></textarea>
+                        </div>
+    
+                        <div class="checkbox-wraper">
+                            <input type="checkbox" id="form-checkbox">
+                            <label for="form-checkbox">Todas suas dúvidas foram esclarecidas durante a mentoria.</label>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+                    <div class="fieldset-wrapper">
+                        <div class="col-3">
+                            <div class="input-wraper">
+                                <label for="form-date">Data</label>
+                                <input type="date" id="form-date">
+                            </div>
+      
+                            <div class="input-wraper">
+                                <label for="begin">Das</label>
+                                <input type="time" id="begin">
+                            </div>
+        
+                            <div class="input-wraper">
+                                <label for="end">Até</label>
+                                <input type="time" id="end">
+                            </div>
+                        </div>
+                        <footer>
+                            <input class="button" type="submit" form="form" value="Salvar" />
+                        </footer>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

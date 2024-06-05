@@ -1,0 +1,79 @@
+/* Variáveis */
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --primary-color: #231F20;
+    --accent-color: #EE24FF;
+    --secondary-color: #3F3D56;
+    --text-color: #828282;
+    --border-color: #ECEFF2;
+}
+
+/* Estilos Globais */
+body {
+    font-family: var(--font-family);
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilos do Conteúdo Principal */
+#main {
+    width: 626px;
+    height: 466px;
+    margin: 64px auto 199px;
+}
+
+#main img {
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+h1 span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+p span {
+    font-weight: bold;
+}
+
+strong {
+    color: var(--secondary-color);
+}
+
+p {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    width: 540px;
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* Estilos do Rodapé */
+#footer a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    margin-left: 28px;
+}
+
+#line {
+    width: 568px;
+    height: 0px;
+    margin: 0 auto 8px;
+    border: 1px solid var(--border-color);
+}
+
+#img_wave {
+    width: 100%;
+    margin-top: 40px;
+}
