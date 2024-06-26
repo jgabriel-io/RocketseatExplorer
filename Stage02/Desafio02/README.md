@@ -1,10 +1,10 @@
-# Treine me
+# Rocket Sec
 
 ### **📝 Descrição**
 
-A página "Treine me" foi criada como um exercício prático para aprimorar habilidades em HTML e CSS, oferecendo uma interface simples por meio da trilha Explorer na plataforma da Rocketseat🚀
+A página "Rocket Sec" foi criada como um exercício prático para aprimorar habilidades em HTML e CSS, oferecendo uma interface simples por meio da trilha Explorer na plataforma da Rocketseat🚀
 
-![Treine me.png](/src/assets/Treine%20me.png)
+![preview.png](/src/assets/preview.png)
 
 ### **💻 Tecnologias Utilizadas**
 
@@ -29,9 +29,8 @@ A página "Treine me" foi criada como um exercício prático para aprimorar habi
 ### 👍 Boas Práticas
 
 - **Organização do Código:** Separação de estilos em um arquivo CSS externo para uma melhor manutenção e organização do código.
-- **Responsividade:** No entanto, a página ainda pode ser melhorada para se tornar responsiva e adaptar-se a diferentes tamanhos de tela.
 
-Este projeto visa destacar a criação de ambientes exclusivos e bem decorados. Foi desenvolvido como uma prática de HTML e CSS para criar uma página web simples e atraente.
+Este projeto foi desenvolvido como uma prática de HTML e CSS para criar uma página web simples e atraente.
 
 ---
 
